@@ -1,0 +1,5 @@
+/target
+.idea
+*.key
+*.passbolt
+.DS_Store

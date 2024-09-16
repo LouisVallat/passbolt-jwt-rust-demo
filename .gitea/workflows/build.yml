@@ -1,0 +1,13 @@
+name: "Build Rust binary in release mode"
+on: push
+
+jobs:
+  build:
+    name: "Build release binary"
+    runs-on: rust-bookworm
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Compile binary in release mode
+        run: |
+          cargo build --release
